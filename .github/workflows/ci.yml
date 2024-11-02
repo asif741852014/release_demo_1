@@ -1,0 +1,12 @@
+
+name: Release to Marketplace
+
+on:
+  release:
+    types: [published]  # Trigger this workflow only when a release is published
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "hi from release event"
